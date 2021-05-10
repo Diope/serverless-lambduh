@@ -1,0 +1,14 @@
+service: serverless-lambduh
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  lambdaHashingVersion: 20201221
+  stage: dev
+  region: us-east-1
+
+# I already made the roles via AWS console, I still need to practice doing that via whatever IaC platform I'm using.
+
+functions:
+  hello:
+    handler: src/handler.randomNumberGeneration
