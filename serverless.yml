@@ -10,7 +10,7 @@ provider:
 # I already made the roles via AWS console, I still need to practice doing that via whatever IaC platform I'm using.
 
 functions:
-  hello:
+  randomNumberGen:
     handler: src/handler.randomNumberGeneration
     memorySize: 128 # this is MB
     timeout: 30 # Seconds
